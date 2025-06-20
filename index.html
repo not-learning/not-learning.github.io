@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 		<head>
-				<style>body {
+				<style>
+					@font-face {
+						font-family: 'DejaVuSans-webfont';
+						src: url('fonts/DejaVuSans-webfont.woff') format('woff');
+					}
+					body {
 						color:white;
 						background-color:black;
 						a:link {color: lightskyblue;}
@@ -9,15 +14,20 @@
 						a:hover {color: white;}
 						a:active {color: greenyellow;}
 						li {margin-bottom: 10px;}
-				}</style>
+						font-family: 'DejaVuSans-webfont', sans-serif;
+						a {font-size: large;}
+					}
+				</style>
 		</head>
 		<title>Тренажер таблицы умножения</title>
 		<body>
 				<h2>Тренажер таблицы умножения</h2>
 				<h3>Версии:</h3>
         <ul style="list-style-type: none;">
-          <li><a href="app.html">Онлайн</a></li>
-          <li><a href="android_app/einmaleins.apk">Андроид</a></li>
+          <li><a href="web/einmaleins.html">Онлайн</a></li>
+          <li><a href="android_app/einmaleins.apk">Андроид</a>
+						<br>
+						(потребуется разрешить установку приложений из сторонних источников, смотрите сами).</li>
 					<li><a href="linux/einmaleins.x86_64">Линукс</a></li>
 					<li><a href="windows/einmaleins.exe">Виндоус</a></li>
         </ul>
